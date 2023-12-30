@@ -27,6 +27,7 @@ if var == "Home":
             myconfig = r"--psm 11 --oem 3"
 
             img = cv2.imread(path)
+            st.image(img, "sample")
             height, width, _ = img.shape
             data = tess.image_to_data(
                 img, config=myconfig, output_type=Output.DICT, lang="eng+fra"
