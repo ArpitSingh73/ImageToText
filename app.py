@@ -1,9 +1,11 @@
 import streamlit as st
+import PIL.Image
 import pytesseract as tess
 from pytesseract import Output
 import cv2
 import tempfile
 import os
+
 
 var = st.sidebar.radio("Navigation", ["Home", "About"])
 
