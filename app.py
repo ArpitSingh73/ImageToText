@@ -1,5 +1,6 @@
 import pytesseract as tess
 from pytesseract import Output
+import pytesseract.pytesseract
 import streamlit as st
 import PIL.Image
 
