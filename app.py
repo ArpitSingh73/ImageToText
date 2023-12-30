@@ -14,7 +14,7 @@ if var == "Home":
 
     file = st.file_uploader("Upload an image...", label_visibility="collapsed")
     if file:
-        try:
+        # try:
             temp_dir = tempfile.mkdtemp()
             path = os.path.join(temp_dir, file.name)
             with open(path, "wb") as f:
@@ -68,8 +68,8 @@ if var == "Home":
             # container = st.container(border=True)
             st.write(" ".join(data["text"]))
 
-        except:
-            st.warning("Select proper file..", icon="⚠️")
+        # except:
+        #     st.warning("Select proper file..", icon="⚠️")
 
 elif var == "About":
     st.subheader(
