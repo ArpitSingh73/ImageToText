@@ -30,11 +30,11 @@ if var == "Home":
             st.image(img, "sample")
            
             height, width, _ = img.shape
-            st.write("hi")
+           
             data = tess.image_to_data(
                 img, config=myconfig, output_type=Output.DICT, lang="eng+fra"
             )
-            st.write("hi")
+           
             ls = []
             amount_boxes = len(data["text"])
             for i in range(amount_boxes):
