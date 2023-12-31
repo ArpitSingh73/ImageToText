@@ -1,7 +1,0 @@
-tesseract
-tesseract-ocr
-tesseract-ocr-por
-numpy
-opencv-python-headless
-pytesseract
-streamlit
