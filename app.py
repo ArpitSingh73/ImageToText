@@ -3,7 +3,7 @@ from pytesseract import Output
 import pytesseract.pytesseract
 import streamlit as st
 import PIL.Image
-import tesseract
+# import tesseract
 import cv2
 import tempfile
 import os
