@@ -31,7 +31,7 @@ if var == "Home":
         myconfig = r"--psm 11 --oem 3"
 
         img = cv2.imread(path)
-        st.image(img, "sample")
+        # st.image(img, "sample")
 
         height, width, _ = img.shape
 
