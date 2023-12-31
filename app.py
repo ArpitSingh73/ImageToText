@@ -3,6 +3,7 @@ from pytesseract import Output
 import pytesseract.pytesseract
 import streamlit as st
 import PIL.Image
+
 # import tesseract
 import cv2
 import tempfile
@@ -14,6 +15,8 @@ var = st.sidebar.radio("Navigation", ["Home", "About"])
 if var == "Home":
     st.title("Image To Text")
     st.text("")
+    st.text("")
+    st.text("")
     st.header("Upload an image...", divider="rainbow")
 
     file = st.file_uploader("Upload an image...", label_visibility="collapsed")
@@ -24,6 +27,10 @@ if var == "Home":
         with open(path, "wb") as f:
             f.write(file.getvalue())
 
+        st.text("")
+        st.text("")
+        st.text("")
+        st.header("Image you selected is:", divider="rainbow")
         st.image(file, file.name)
         # st.write(file.name)
         # st.write(file)
@@ -66,9 +73,17 @@ if var == "Home":
 
         # st.header(" ")
         st.text("")
+        st.text("")
+        st.text("")
+        st.text("")
         st.header("Image after recognotion :", divider="rainbow")
+       
         st.image(img, file.name)
+        st.text("")
+        st.text("")
+        st.text("")
         st.header("Recognized characters are : ", divider="rainbow")
+       
         # container = st.container(border=True)
         st.write(" ".join(data["text"]))
 
